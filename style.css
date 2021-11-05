@@ -1,0 +1,395 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: 'Exo 2', sans-serif;
+  background-color: #f7fafc;
+}
+
+/* For content in boxes in index page */
+.detail{
+  color: rgb(50, 50, 50);
+  text-align: right;
+  padding-right: 20px;
+}
+
+/* For content in boxes in index page */
+.num{
+  color: rgb(8, 79, 121);
+  text-align: right;
+  padding-right: 20px;
+}
+
+/* For blue title in each page */
+.title-b{
+  color:rgb(71, 144, 255);
+}
+
+/* For green title in each page */
+.title-g{
+  color:rgb(60, 219, 73);
+}
+
+/* For top bar */
+.topnav{
+  height: 15%;
+  width: 100%;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  background-color: white;
+}
+
+/* For Eladis logo */
+.flogo{
+  height: 60px;
+  width: 100px;
+  align-items: center;
+  margin: 8px;
+  padding-left: 10px;
+}
+
+.disname{
+  float: right;
+  margin-top: 30px;
+  color: rgb(80, 80, 80);
+}
+
+/* For profile button */
+.profile{
+  height: 30px;
+  width: 40px;
+  margin: 22px;
+  padding-right: 10px;
+  float: right;
+}
+
+/* For content below top bar */
+.all{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* For side navigation */
+.sidenav {
+  height: 100%;
+  width: 16%;
+  position: fixed;
+  z-index: 1;
+  top: auto;
+  left: 0;
+  background-color: rgb(144, 198, 248);
+  overflow-x: hidden;
+  padding: 10px;
+  box-shadow: 10px 0px 10px -2px rgba(0, 0, 0, 0.1);
+}
+
+/* For placing icon infront of the word in side bar */
+.mr-10-ml-8{
+  margin-right: 10px; 
+  margin-left: 8px;
+}
+
+/* For side bar links */
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  border-radius: 10px;
+  display: block;
+}
+
+/* For changing color on hover in side bar*/
+.sidenav a:hover {
+  background-color: rgb(252, 252, 252, 0.5);
+  color: rgb(50, 50, 50);
+}
+
+/* For the main content */
+.content {
+  height: 100%;
+  width: 84%;
+  position: fixed;
+  right: 0;
+  left : auto;
+  flex: 1 1 0%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* For spliting main content in home page into three equal sections*/
+.grid-3{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 2.5rem;
+  gap: 2.5rem;
+  padding-top: 40px;
+}
+
+/* For displaying each box in home page */
+.card {
+  border-radius: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-width: 1px;
+  padding-left: 20px;
+}
+
+/* For spliting content in card into two equal sections*/
+.innergrid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* For picture in the card*/
+.fpic{
+  height: 60px;
+  width: auto;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+/* For form */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Exo 2', sans-serif;
+}
+
+input[type=text]:hover{
+  border: 1px solid rgb(118, 132, 250);
+}
+
+input[type=text]:focus{
+  outline: none !important;
+  border: 1px solid rgb(118, 132, 250);
+  box-shadow: 0 0 10px #719ECE;
+}
+
+input[type=date]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Exo 2', sans-serif;
+}
+
+input[type=date]:hover{
+  border: 1px solid rgb(118, 132, 250);
+}
+
+input[type=date]:focus{
+  outline: none !important;
+  border: 1px solid rgb(118, 132, 250);
+  box-shadow: 0 0 10px #719ECE;
+}
+
+input[type=time]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Exo 2', sans-serif;
+}
+
+input[type=time]:hover{
+  border: 1px solid rgb(118, 132, 250);
+}
+
+input[type=time]:focus{
+  outline: none !important;
+  border: 1px solid rgb(118, 132, 250);
+  box-shadow: 0 0 10px #719ECE;
+}
+
+select:hover{
+  border: 1px solid rgb(118, 132, 250);
+}
+
+select:focus{
+  outline: none !important;
+  border: 1px solid rgb(118, 132, 250);
+  box-shadow: 0 0 10px #719ECE;
+}
+
+textarea:hover{
+  border: 1px solid rgb(118, 132, 250);
+}
+
+textarea:focus{
+  outline: none !important;
+  border: 1px solid rgb(118, 132, 250);
+  box-shadow: 0 0 10px #719ECE;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #3592df;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-family: 'Exo 2', sans-serif;
+}
+
+input[type=submit]:hover {
+  background-color: #519fdf;
+}
+
+/* For container in write prescription page */
+.container-left {
+  width: 65%;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+/* For container in other pages */
+.container{
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-width: 1px;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+/* For making table to scroll */
+.scroll-table{
+  height: 400px; 
+  overflow: auto;
+}
+
+/* For spliting sections */
+.col-5 {
+  float: left;
+  width: 5%;
+  margin-top: 6px;
+}
+
+.col-7 {
+  float: left;
+  width: 7%;
+  margin-top: 6px;
+}
+
+.col-10 {
+  float: left;
+  width: 10%;
+  margin-top: 6px;
+}
+
+.col-15 {
+  float: left;
+  width: 15%;
+  margin-top: 6px;
+}
+
+.col-20 {
+  float: left;
+  width: 20%;
+  margin-top: 6px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-50 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+.col-60 {
+  float: left;
+  width: 60%;
+  margin-top: 6px;
+}
+
+.col-68 {
+  float: left;
+  width: 68%;
+  margin-top: 6px;
+}
+
+.col-70 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+
+.col-80 {
+  float: left;
+  width: 80%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* For table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+}
+
+tr:hover {
+  background-color: #D6EEEE;
+}
+
+/* For button */
+button[type=button]{
+  background-color: #ff831e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-family: 'Exo 2', sans-serif;
+}
+
+button[type=button]:hover{
+  background-color: #fd933c;
+}

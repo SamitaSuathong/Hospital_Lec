@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title-->
+    <title>Eladis - Prescription detail</title>
+
+    <!-- Add icon-->
+    <link rel = "icon" href = "/img/eladis logo.png" type = "image/x-icon">
+
+    <!-- CSS written by me -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top bar -->
+    <div class="topnav">
+        <div class="row">
+            <div class="col-25">
+                <a href="/staff_index.html"><img src="img/eladis.png" class="flogo"></a>
+            </div>
+            <div class="col-68">
+                <p class="disname">Welcome, Thasorn</p>
+            </div>
+            <div class="col-7">
+                <a href="#"><img src="/img/user.png" class="profile"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- All content below top bar -->
+    <div class="all">
+        <!-- Left bar -->
+        <div class="sidenav" style="background-color: rgb(119, 231, 119);">
+            <a href="/staff_pati_list.html"><i class="fa fa-user-circle mr-10-ml-8"></i>Patient</a>
+            <a href="/staff_app_req.html"><i class="fa fa-calendar mr-10-ml-8"></i>Request</a>
+            <a href="/staff_app_list.html"><i class="fa fa-calendar mr-10-ml-8"></i>Appointment</a>
+            <a href="/staff_lab_list.html"><i class="fa fa-table mr-10-ml-8"></i>Laboratory</a>
+            <a href="/staff_labre_list.html"><i class="fa fa-table mr-10-ml-8"></i>Lab Reservation</a>
+            <a href="/staff_pre_list.html"><i class="fa fa-envelope mr-10-ml-8"></i>Prescription</a>
+        </div>
+
+        <!-- Main content section -->
+        <div class="content">
+            <h2 class="title-g">Prescription detail</h2>
+            <div class="container-left">
+                <form action="#">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="preNo">Prescription No.</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="preNo" name="preNo" value="401" disabled>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="apptID">Appointment ID</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="apptID" name="apptID" value="4821 - Ms.Seulgi Kang" disabled>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="doc">Doctor</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="doc" name="doc" value="Dr.John Robinson" disabled>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="med">Medicine</label>
+                        </div>
+                        <div class="col-25">
+                            <input type="text" id="med" name="med" value="Abacavir" disabled>
+                        </div>
+                        <div class="col-25" style="padding-left: 20px;">
+                            <label for="medam">Amount</label>
+                        </div>
+                        <div class="col-25">
+                            <input type="text" id="medam" name="medam" value="10 ml" disabled>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="prod">Product</label>
+                        </div>
+                        <div class="col-25">
+                            <input type="text" id="prod" name="prod" value="Gauze Roll" disabled>
+                        </div>
+                        <div class="col-25" style="padding-left: 20px;">
+                            <label for="prodam">Amount</label>
+                        </div>
+                        <div class="col-25">
+                            <input type="text" id="prodam" name="prodam" value="1" disabled>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="Rec">Recommendation</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="Rec" name="Rec" placeholder="Recommendation" style="height:100px" disabled>like a fever, fever, fever, neol algo sipeo</textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- Edit button -->
+                    <div class="row">
+                        <div class="col-70"></div>
+                        <div class="col-15">
+                            <input type="submit" value="Arrange">
+                        </div>
+                        <div class="col-15"></div>
+                            <a href="/staff_pre_list.html"><button type="button">Cancel</button></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

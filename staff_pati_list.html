@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title-->
+    <title>Eladis - Patient lists</title>
+
+    <!-- Add icon-->
+    <link rel = "icon" href = "/img/eladis logo.png" type = "image/x-icon">
+
+    <!-- CSS written by me -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top bar -->
+    <div class="topnav">
+        <div class="row">
+            <div class="col-25">
+                <a href="/staff_index.html"><img src="img/eladis.png" class="flogo"></a>
+            </div>
+            <div class="col-68">
+                <p class="disname">Welcome, Thasorn</p>
+            </div>
+            <div class="col-7">
+                <a href="#"><img src="/img/user.png" class="profile"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- All content below top bar -->
+    <div class="all">
+        <div class="sidenav" style="background-color: rgb(119, 231, 119);">
+            <a href="/staff_pati_list.html"><i class="fa fa-user-circle mr-10-ml-8"></i>Patient</a>
+            <a href="/staff_app_req.html"><i class="fa fa-calendar mr-10-ml-8"></i>Request</a>
+            <a href="/staff_app_list.html"><i class="fa fa-calendar mr-10-ml-8"></i>Appointment</a>
+            <a href="/staff_lab_list.html"><i class="fa fa-table mr-10-ml-8"></i>Laboratory</a>
+            <a href="/staff_labre_list.html"><i class="fa fa-table mr-10-ml-8"></i>Lab Reservation</a>
+            <a href="/staff_pre_list.html"><i class="fa fa-envelope mr-10-ml-8"></i>Prescription</a>
+        </div>
+
+        <!-- Main content section -->
+        <div class="content">
+            <h2 class="title-g">Patient</h2>
+            <!-- Table to display all appointment -->
+            <div class="container">
+                <div class="scroll-table">
+                    <table>
+                        <colgroup>
+                            <col width="18%">
+                            <col width="20%">
+                            <col width="18%">
+                            <col width="20%">
+                            <col width="18%">
+                            <col width="2%">
+                            <col width="2%">
+                            <col width="2%">
+                        </colgroup>
+                        <tr>
+                            <th>Patient ID</th>
+                            <th>Name</th>
+                            <th>Sex</th>
+                            <th>Date of birth</th>
+                            <th>Age</th>
+                            <th>Detail</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                        <tr>
+                            <td>201</td>
+                            <td>Ms.Seulgi Kang</td>
+                            <td>Female</td>
+                            <td>1994-02-10</td>
+                            <td>27</td>
+                            <td><a href="/staff_pati_detail.html"> <img src="/img/plus.png" width="30" height="30"></a></td>
+                            <td><a href="/staff_pati_edit.html"> <img src="/img/editing.png" width="30" height="30"></a></td>
+                            <td><a href=#> <img src="/img/trash.png" width="30" height="30"></a></td>
+                        </tr>
+                        <tr>
+                            <td>202</td>
+                            <td>Mr.Jake Sim</td>
+                            <td>Male</td>
+                            <td>2002-11-15</td>
+                            <td>18</td>
+                            <td><a href="#"> <img src="/img/plus.png" width="30" height="30"></a></td>
+                            <td><a href="#"> <img src="/img/editing.png" width="30" height="30"></a></td>
+                            <td><a href=#> <img src="/img/trash.png" width="30" height="30"></a></td>
+                        </tr>
+                        <tr>
+                            <td>203</td>
+                            <td>Mr.Pual Kim</td>
+                            <td>Male</td>
+                            <td>1988-02-11</td>
+                            <td>33</td>
+                            <td><a href="#"> <img src="/img/plus.png" width="30" height="30"></a></td>
+                            <td><a href="#"> <img src="/img/editing.png" width="30" height="30"></a></td>
+                            <td><a href=#> <img src="/img/trash.png" width="30" height="30"></a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
