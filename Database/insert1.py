@@ -17,16 +17,16 @@ ind2="INSERT INTO Doctor VALUES (3002, 'doctor2', '12345', 'Dr.', 'Paryahchet', 
 inl1="INSERT INTO Laboratory VALUES (91001, 'X-Ray room', 'X-Ray', 'Eladis Rozer 1', '5th', '352', 'Unavaliable');"
 inl2="INSERT INTO Laboratory VALUES (91002, 'Blood testing room', 'Blood test', 'Eladis Rozer 2', '3rd', '210', 'Avaliable');"
 inl3="INSERT INTO Laboratory VALUES (91003, 'Urea testing room', 'Urea test', 'Eladis Rozer 2', '3rd', '211', 'Avaliable');"
-inm1="INSERT INTO Medicine VALUES (101, 'Acetaminophen', 'Tablet', '325 mg', 'a maximum daily dose for adults of 3 g, " \
+inm1="INSERT INTO Medicine VALUES (101, 'Acetaminophen', 'Tablet', 'a maximum daily dose for adults of 3 g, " \
      "with no more than 650 mg every 6 hours, as needed.', 'MedLine Plus Drug');"
-inm2="INSERT INTO Medicine VALUES (102, 'Aspirin', 'Tablet', '350 mg', 'a daily dose between 75 mg and 325 mg'," \
+inm2="INSERT INTO Medicine VALUES (102, 'Aspirin', 'Tablet', 'a daily dose between 75 mg and 325 mg'," \
      "'MedLine Plus Drug');"
-inm3="INSERT INTO Medicine VALUES (103, 'Pseudoephedrine', 'Tablet', '60 mg', '30 to 60 mg orally every 4 to 6 hours as needed'," \
+inm3="INSERT INTO Medicine VALUES (103, 'Pseudoephedrine', 'Tablet', '30 to 60 mg orally every 4 to 6 hours as needed'," \
      "'MedLine Plus Drug');"
-inpr1="INSERT INTO Product VALUES (201, 'Antiseptic', 'Agent', '100 ml', 'preventing infections on the skin, particularly for cuts," \
+inpr1="INSERT INTO Product VALUES (201, 'Antiseptic', 'Agent', 'preventing infections on the skin, particularly for cuts," \
      "scrapes, or minor burns.', 'MedLine Plus Drug');"
-inpr2="INSERT INTO Product VALUES (202, 'Bandage', 'Healer', '10 pcs', 'dressing where a wound is present', 'MedLine Plus Drug');"
-inpr3="INSERT INTO Product VALUES (203, 'Syringe', 'Injector', '2 pcs', 'inject fluid into, or withdraw fluid from, the body'," \
+inpr2="INSERT INTO Product VALUES (202, 'Bandage', 'Healer', 'dressing where a wound is present', 'MedLine Plus Drug');"
+inpr3="INSERT INTO Product VALUES (203, 'Syringe', 'Injector', 'inject fluid into, or withdraw fluid from, the body'," \
      "'MedLine Plus Drug');"
 
 cursor=connection.cursor()

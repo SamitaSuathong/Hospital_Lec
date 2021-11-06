@@ -6,8 +6,6 @@ connection = pymysql.connect(
     database="Hospital_Lec"
     )
 
-#db="CREATE database Hospital_Lec;"
-
 tb1="CREATE TABLE Patient (PatientID int(10) PRIMARY KEY, PatientUser varchar(30), PatientPasswd varchar(30), PatientPID " \
     "varchar(20), PatientTitle varchar(10), PatientFName varchar(50), PatientLName varchar(50), PatientSex varchar(10)," \
     "PatientDOB date, PatientAge int(3), PatientAddress text(100), PatientPhone varchar(10), PatientDisease varchar(30));"
@@ -24,11 +22,12 @@ tb6="CREATE TABLE Appointment (AppointmentID int(10) PRIMARY KEY, RequestID int(
 tb7="CREATE TABLE Prescription (PrescriptionNo int(8) PRIMARY KEY, DoctorID int(10), StaffID int(10), AppointmentID int(10)," \
     "Recommendation text(200));"
 tb8="CREATE TABLE Hospital_Lec.Order (PrescriptionNo int(8), SuppliesID int(6));"
-tb9="CREATE TABLE Supplies (SuppliesID int(6) PRIMARY KEY, MedID int(8), ProductID int(8));"
-tb10="CREATE TABLE Medicine (MedID int(8) PRIMARY KEY, MedName varchar(50), MedType varchar(50), MedAmount varchar(6)," \
+tb9="CREATE TABLE Supplies (SuppliesID int(6) PRIMARY KEY, MedID int(8), MedAmount varchar(10), ProductID int(8), ProductAmount " \
+    "varchar(10));"
+tb10="CREATE TABLE Medicine (MedID int(8) PRIMARY KEY, MedName varchar(50), MedType varchar(50)," \
     "MedRec text(250), MedProvider varchar(40));"
 tb11="CREATE TABLE Product (ProductID int(8) PRIMARY KEY, ProductName varchar(50), ProductType varchar(50), " \
-    "ProductAmount varchar(6), ProductRec text(250), ProductProvider varchar(40));"
+    "ProductRec text(250), ProductProvider varchar(40));"
 tb12="CREATE TABLE Request (RequestID int(10) PRIMARY KEY, PatientID int(10), StaffID int(10), RequestDate date, Request" \
      "time time, Sympton varchar(45), RequestStatus varchar(12)); "
 
@@ -63,8 +62,6 @@ at16="ALTER TABLE Request ADD FOREIGN KEY (PatientID) REFERENCES Patient(Patient
 at17="ALTER TABLE Request ADD FOREIGN KEY (StaffID) REFERENCES Staff(StaffID);"
 
 cursor=connection.cursor()
-
-#cursor.execute(db)
 
 cursor.execute(tb1)
 cursor.execute(tb2)

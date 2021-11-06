@@ -335,17 +335,24 @@ input[type=submit]:hover {
   margin-top: 6px;
 }
 
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
 .col-80 {
   float: left;
   width: 80%;
   margin-top: 6px;
 }
 
-.col-75 {
+.col-90 {
   float: left;
-  width: 75%;
+  width: 90%;
   margin-top: 6px;
 }
+
 
 /* Clear floats after the columns */
 .row:after {
